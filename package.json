@@ -1,0 +1,9 @@
+{
+  "devDependencies": {},
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "cypress": "^14.3.3"
+  }
+}
