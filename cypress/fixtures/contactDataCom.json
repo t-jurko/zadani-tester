@@ -1,0 +1,13 @@
+{
+  "name": "John Dunka",
+  "companyNumber": "21289247",
+  "taxNumber": "123456789",
+  "telephone": "909-362-5508",
+  "email": "john.dunka@example.com",
+  "web": "www.google.com",
+  "street": "Přívozní 1054/2, Holešovice",
+  "city": "Praha",
+  "postcode": "17000",
+  "country": "United States",
+  "subdivision": "Alaska"
+}

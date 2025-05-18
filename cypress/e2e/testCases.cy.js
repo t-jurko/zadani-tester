@@ -1,5 +1,26 @@
+import { domains } from '../support/constants';
+
+const allDomains = [
+  { domain: domains.cz },
+  { domain: domains.com },
+  { domain: domains.sk }
+];
+
 describe('Contact page', () => {
-  it('Go to homepage', () => {
-    cy.visitOnDomain('/', 'cz')
+  beforeEach(() => {
+    // TODO: mazani databaze (empty contact list -> clean state)
+  });
+
+  allDomains.forEach(({ domain }) => {
+    // Vyber spravne credentials
+    const creds = Cypress.env('credentials')[domain];
+    it.only(`Create contact on: ${domain} domain`, function () {
+      // Otevri stranku
+      cy.visitOnDomain('/', domain)
+      // Prihlas se do aplikace
+      cy.loginToApplication(creds.username, creds.password)
+      // Vypln kontakt dle domeny
+      cy.fillNewContact(domain);
+    });
   });
 });

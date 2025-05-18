@@ -1,0 +1,13 @@
+{
+  "name": "John Dunka",
+  "companyNumber": "21289247",
+  "taxNumber": "123456789",
+  "telephone": "606606606",
+  "email": "john.dunka@example.com",
+  "web": "www.google.com",
+  "vatNumber": "SK9999999999",
+  "street": "Bazovského ulica 55, Dúbravka",
+  "city": "Bratislava",
+  "postcode": "2412",
+  "country": "Slovensko"
+}

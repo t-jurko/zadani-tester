@@ -5,5 +5,8 @@
   },
   "dependencies": {
     "cypress": "^14.3.3"
+  },
+  "scripts":{
+    "runCypressTestsHeadless": "cypress run --spec 'cypress/e2e/testCases.cy.js' --browser chrome --headless"
   }
 }
