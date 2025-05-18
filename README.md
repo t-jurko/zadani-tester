@@ -1,5 +1,6 @@
-# Repositář s vyplněním zadaním (časově 3-4h):
-## Output log:
+## Repositář s vyplněním zadaním (časově 3-4h):
+### Output log:
+```
 ====================================================================================================
 
   (Run Starting)
@@ -55,6 +56,7 @@
 
 Done in 58.54s.
 -------------------------------------------------------------------------
+```
 # QA úkol – Testování sekce kontaktů napříč doménami
 
 ## 🧩 Intro
