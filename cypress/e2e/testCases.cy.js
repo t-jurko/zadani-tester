@@ -8,13 +8,13 @@ const allDomains = [
 
 describe('Contact page', () => {
   beforeEach(() => {
-    // TODO: mazani databaze (empty contact list -> clean state)
+    // TODO: napr. mazani contacts databaze (empty contact list -> clean state)
   });
 
   allDomains.forEach(({ domain }) => {
     // Vyber spravne credentials
     const creds = Cypress.env('credentials')[domain];
-    it.only(`Create contact on: ${domain} domain`, function () {
+    it(`Create contact on: ${domain} domain`, function () {
       // Otevri stranku
       cy.visitOnDomain('/', domain)
       // Prihlas se do aplikace

@@ -24,7 +24,7 @@ Cypress.Commands.add('loginToApplication', (username, password) => {
     if ($body.find(s.login.loginToMyAccButton).length) {
       cy.get(s.login.loginToMyAccButton).click();
     } else {
-      cy.log('Neni potreba provest click na login sign in tlacitko.');
+      cy.log('Neni potreba provest click na "login to my acc" tlacitko.');
     }
   });
   cy.get(s.login.emailInput).type(username)
@@ -36,20 +36,18 @@ Cypress.Commands.add('loginToApplication', (username, password) => {
 Cypress.Commands.add('fillNewContact', (domain) => {
   switch (domain) {
     case domains.cz:
-      cy.fillNewContactCz(domain)
-      cy.saveAndCheckContact();
+      cy.fillNewContactCz(domain);
       break;
     case domains.com:
-      cy.fillNewContactCom(domain)
-      cy.saveAndCheckContact();
+      cy.fillNewContactCom(domain);
       break;
     case domains.sk:
-      cy.fillNewContactSk(domain)
-      cy.saveAndCheckContact();
+      cy.fillNewContactSk(domain);
       break;
     default:
       throw new Error(`Not existing/implemented domain: ${domain}`);
   }
+  cy.saveAndCheckContact();
 });
 
 // Spolecne inputy pro vsechny domeny

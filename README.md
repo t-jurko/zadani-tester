@@ -10,7 +10,7 @@
   │ Browser:        Chrome 136 (headless)                                                          │
   │ Node Version:   v22.15.1 (C:\Program Files\nodejs\node.exe)                                    │
   │ Specs:          1 found (testCases.cy.js)                                                      │
-  │ Searched:       C:\Users\Tomas\Documents\Personal\zadani-tester\cypress\e2e\testCases.cy.js    │
+  │ Searched:       C:\Users\XXX\Documents\YYY\zadani-tester\cypress\e2e\testCases.cy.js           │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 
